@@ -1,0 +1,80 @@
+/* Estilos da página index.html */
+.center 
+{
+ text-align: center;
+}
+
+.justify
+{
+    text-align: justify;
+}
+
+.container 
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-30
+{
+    padding: 30px;
+}
+
+.br-45
+{
+    border-radius: 45%;   
+}
+
+.hw-300
+{
+    width: 300px;
+    height: 300px;
+}
+
+#menu li 
+{
+    display: inline;
+    padding: 10px;
+    font-family: 'Satisfy', cursive;
+}
+
+#menu li a 
+{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#menu li a:hover 
+{
+    color: gray;
+}
+
+.tm-social
+{
+    width: 30px;
+    padding: 20px;
+}
+
+.mb-30
+{
+    margin-bottom: 30px;
+}
+
+
+
+
+/* Estilos da página indicacao.html */
+.ml-50
+{
+    margin-left: 1rem;
+    ;
+}
+
+
+
+
+
+/* Estilos da página x.html */
