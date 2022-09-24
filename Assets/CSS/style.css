@@ -43,6 +43,7 @@ h1
 h2
 {
     font-size: 1.25rem;
+
 }
 
 nav
@@ -184,6 +185,11 @@ h3
 .formulario
 {
     width: 100%;
+}
+
+.comeco
+{
+    text-align: left;
 }
 
 input, textarea, button
