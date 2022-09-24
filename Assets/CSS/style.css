@@ -119,6 +119,11 @@ footer
     padding: 20px;
 }
 
+.tm-social:hover
+{
+    filter: drop-shadow(2px 2px 2px var(--purple));
+}
+
 justify
 {
     text-align: justify;
