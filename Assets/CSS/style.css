@@ -1,7 +1,6 @@
 /* Estilos da página index.html */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-:root
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');:root
 {
     --bg-background: #f1f2f6; /* Cor do fundo da página */
     --purple: #6D214F;
@@ -79,7 +78,7 @@ a
 
 #menu li a:hover 
 {
-    text-shadow: 0 0 2px var(--purple);
+   text-shadow: 0 0 2px var(--purple); /* Coloca sombra ao passar o mousse sobre o menu */
 }
 
 hr
@@ -164,6 +163,8 @@ h3
     aspect-ratio: 16/9;
     border-radius: 8px;
     box-shadow: 8px 8px 16px #00cec9; /* Coloca uma sombra no fundo da caixa */
+    margin-bottom: 2rem;
+    margin-right: 2rem;
 }
 
 .endereco
@@ -177,6 +178,7 @@ h3
     display: flex;
     gap: 3rem;
     justify-content: center;
+    margin-left: 2rem;
 }
 
 .formulario
@@ -190,8 +192,10 @@ input, textarea, button
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 8px;
-    font-size: 1.250rem;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
 }
+
 input, textarea
 {
     border: 1px solid;
@@ -213,7 +217,10 @@ button:hover
 {
     width: 200px;
     height: 200px;
-}
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+  } 
 
 
 /* Estilos da página x.html */
