@@ -1,12 +1,103 @@
 /* Estilos da página index.html */
-.center 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+:root
 {
- text-align: center;
+    --bg-background: #f1f2f6; /* Cor do fundo da página */
+    --purple: #6D214F;
+    --blue-disabled: #00cec9;
+    --blue-blue: #81ecec;
 }
 
-.justify
+*
 {
-    text-align: justify;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: var(--bg-background);
+}
+
+p 
+{
+    font-family: 'Poiret One', cursive;
+    margin-bottom: .750rem;
+    font-size: 1.10rem;
+}
+
+h1, h2, h3
+{
+    font-family: 'Space Mono', monospace;
+    color: var(--purple);
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+h1
+{
+    font-size: 2rem;
+}
+
+h2
+{
+    font-size: 1.25rem;
+}
+
+nav
+{
+    display: flex;
+    width: 70vw;
+    margin: 0 auto;
+    justify-content: flex-end;
+    font-size: 2rem;
+    padding: 2.25rem 1rem;
+}
+
+ul
+{
+    text-decoration: nome;
+    font-size: 2rem;
+    transition: text-shadow .2s ease-in-out;
+}
+
+li
+{
+    display: inline;
+    margin-right: 1rem;
+    font-size: 24px;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: text-shadow .2s ease-in-out;
+}
+
+#menu li a:hover 
+{
+    text-shadow: 0 0 2px var(--purple);
+}
+
+hr
+{
+    width: 60vw;
+    margin: 2.5rem auto;
+    height: 2px;
+    border: none;
+    background-color: var(--blue-disabled);
+}
+
+footer
+{
+    padding: 1rem 0;
+    border-top: 2px solid var (--blue-blue);
+    margin-top: 1rem;
+    display: inline;
+    justify-content: center;
 }
 
 .container 
@@ -15,6 +106,22 @@
     flex-flow: row;
     justify-content: center;
     align-items: center;
+}
+
+.center 
+{
+ text-align: center;
+}
+
+.tm-social
+{
+    width: 80px;
+    padding: 20px;
+}
+
+justify
+{
+    text-align: justify;
 }
 
 .p-30
@@ -27,54 +134,86 @@
     border-radius: 45%;   
 }
 
-.hw-300
+.hw-320
 {
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
+    aspect-ratio: 1;
 }
 
-#menu li 
+.video
 {
-    display: inline;
-    padding: 10px;
-    font-family: 'Satisfy', cursive;
+    width: 40vw;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    margin-top: 2rem;
 }
-
-#menu li a 
-{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-
-#menu li a:hover 
-{
-    color: gray;
-}
-
-.tm-social
-{
-    width: 30px;
-    padding: 20px;
-}
-
-.mb-30
-{
-    margin-bottom: 30px;
-}
-
-
-
 
 /* Estilos da página indicacao.html */
-.ml-50
+h3
 {
-    margin-left: 1rem;
-    ;
+    font-size: 1.10rem;
+    margin-bottom: 2rem;
 }
 
+.mapa
+{
+    width: 35vw;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    box-shadow: 8px 8px 16px #00cec9; /* Coloca uma sombra no fundo da caixa */
+}
 
+.endereco
+{
+    color: #1014f7;
+    font-size: 1.250rem;
+}
 
+.contato
+{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.formulario
+{
+    width: 100%;
+}
+
+input, textarea, button
+{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.250rem;
+}
+input, textarea
+{
+    border: 1px solid;
+}
+
+button
+{
+    background-color: transparent;
+    cursor: pointer; /* Transforma o cousor na mãozinha */
+}
+
+button:hover
+{
+    background-color: #747d8c; /* Coloca um fundo no momento em que o mousse passa por cima do botão */
+    color: #fff; /* A palavra Enviar fica na cor branca */
+}
+
+.gif
+{
+    width: 200px;
+    height: 200px;
+}
 
 
 /* Estilos da página x.html */
