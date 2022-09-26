@@ -15,14 +15,16 @@
             <a href="index.html" >Home</a>
         </li>
         <li>
+            <a href="postagens.html" >Postagens</a>
+        </li>
+        <li>
             <a href="indicacao.html" >Indicação</a>
         </li>
+        
     </ul>
     </nav>
 
-   
-
-    <main class="contato">
+    <span class="contato">
     <div class="formulario center">
         <h2>
             Deixe aqui sua Indicação
@@ -30,20 +32,26 @@
 
     <div class="comeco">
         <label for="nome">Nome:</label>
-        <input type="text" placeholder="Insira seu nome completo">
+        <input type="text" id="nome" placeholder="Insira seu nome completo" onkeyup="validaNome()" required>
+        <div id="txtNome">
+        </div>
     </div>
 
         <div class="comeco">
         <label for="email">E-mail:</label>
-        <input type="email" placeholder="Insira o seu e-mail">
+        <input type="email" id="email" placeholder="Insira o seu e-mail" onkeyup="validaEmail2()" required>
+        <div id="txtEmail">
+        </div>
         </div>
 
         <div class="comeco">
         <label for="indicacao">Indicação:</label>
-        <textarea name="indicacao" placeholder="Deixe aqui sua indicação de série" cols="45" rows="8"></textarea>
+        <textarea name="indicacao" id="indicacao" placeholder="Deixe aqui sua indicação de série" cols="45" rows="8" onkeyup="validaIndicacao()" required></textarea>
+        <div id="txtIndicacao">
+        </div>
         </div>
 
-        <button type="submit">
+        <button onclick="enviar()" type="submit">
             Enviar
         </button>
     </div>
@@ -56,7 +64,7 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210309.8367706263!2d19.
     811959362975486!3d38.20831329169703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a11866a28e95db%
     3A0xc5c3e836c80d9623!2sAlykes%20Drosia!5e0!3m2!1spt-BR!2sbr!4v1663868023085!5m2!1spt-BR!2sbr" class="mapa" style="border:0;"
-     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa">
     </iframe>
 
     <p>
@@ -68,7 +76,7 @@
     </p>
     </div>
 
-</main>
+</span>
 
 <iframe class="gif" src="https://giphy.com/embed/7j3UoXzbjvaIo" frameBorder="0" allowFullScreen>
 </iframe>
@@ -93,9 +101,12 @@
         </div>
 
         <p class="center">
-       Todos os diretiros reservados: Thais Oliveira &copy
-       </p>
+            Todos os diretiros reservados: Thais Oliveira &copy
+        </p>
     </footer>
-    
+
+    <script src="/Assets/scripts/scripts.js">
+    </script>
+
 </body>
 </html>
