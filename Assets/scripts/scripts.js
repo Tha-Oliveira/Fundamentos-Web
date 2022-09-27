@@ -19,6 +19,11 @@ let emailOk = false
 let indicacaoOk = false
 let mapa = document.querySelector("#mapa")
 
+const openModalButton = document.querySelector("#open-modal")
+const closeModalButton = document.querySelector("#close-modal")
+const modal = document.querySelector("#modal")
+const fade = document.querySelector("#fade")
+
 function validaNome()
 {
     let txtNome =document.querySelector("#txtNome")
@@ -85,10 +90,7 @@ function validaIndicacao()
     {
         txtIndicacao.innerHTML = indicacao.value.length + "/100"
         indicacaoOk = true
-        if(indicacao.value.length <=100)
-        {
-            txtIndicacao.style.color = "green"
-        }
+        txtIndicacao.style.color = "green"
     }
 }
 
@@ -96,7 +98,15 @@ function enviar()
 {
     if(nomeOk == true && emailOk == true && indicacaoOk == true)
     {
-        alert ("Formulário enviado com sucesso!")
+        const toggleModal = () => 
+        {
+            modal.classList.toggle("hide");
+            fade.classList.toggle("hide");
+        };
+        [openModalButton, closeModalButton, fade].forEach((el) => 
+        {
+            el.addEventListener("click", () => toggleModal());
+        });
     }
     else
     {

@@ -39,7 +39,7 @@
 
         <div class="comeco">
         <label for="email">E-mail:</label>
-        <input type="email" id="email" placeholder="Insira o seu e-mail" onkeyup="validaEmail2()" required>
+        <input type="email" id="email" placeholder="Insira o seu e-mail" onkeyup="validaEmail()" required>
         <div id="txtEmail">
         </div>
         </div>
@@ -51,9 +51,19 @@
         </div>
         </div>
 
-        <button onclick="enviar()" type="submit">
+        <button id="open-modal" onclick="enviar()" type="submit">
             Enviar
         </button>
+    </div>
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h4>Formulário enviado com sucesso!</h4>
+        </div>
+            <iframe class="gif" src="https://giphy.com/embed/7j3UoXzbjvaIo" frameBorder="0" allowFullScreen>
+            </iframe>
+            <button id="close-modal">fechar</button>
     </div>
 
     <div class="endereco">
@@ -77,9 +87,6 @@
     </div>
 
 </span>
-
-<iframe class="gif" src="https://giphy.com/embed/7j3UoXzbjvaIo" frameBorder="0" allowFullScreen>
-</iframe>
 
     <hr>
     <footer>
