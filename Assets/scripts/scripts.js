@@ -96,7 +96,7 @@ function validaIndicacao()
 
 function enviar()
 {
-    if(nomeOk == true && emailOk == true && indicacaoOk == true)
+    if(nomeOk  && emailOk  && indicacaoOk )
     {
         const toggleModal = () => 
         {
@@ -106,6 +106,7 @@ function enviar()
         [openModalButton, closeModalButton, fade].forEach((el) => 
         {
             el.addEventListener("click", () => toggleModal());
+            console.log("teste")
         });
     }
     else
