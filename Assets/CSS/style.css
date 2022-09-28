@@ -1,4 +1,3 @@
-/* Estilos da página index.html */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');:root
 {
@@ -58,7 +57,7 @@ nav
 
 ul
 {
-    text-decoration: nome;
+    text-decoration: none;
     font-size: 2rem;
     transition: text-shadow .2s ease-in-out;
 }
@@ -84,7 +83,7 @@ a
 
 hr
 {
-    width: 60vw;
+    width: 98vw;
     margin: 2.5rem auto;
     height: 2px;
     border: none;
@@ -110,7 +109,7 @@ footer
 
 .center 
 {
- text-align: center;
+    text-align: center;
 }
 
 .tm-social
@@ -119,9 +118,9 @@ footer
     padding: 20px;
 }
 
-.tm-social:hover
+.tm-social:hover /* o hover indica que terá uma sombra no que estamos passando */
 {
-    filter: drop-shadow(2px 2px 2px var(--purple));
+    filter: drop-shadow(2px 5px 2px var(--purple));
 }
 
 justify
@@ -156,11 +155,17 @@ justify
     margin-top: 2rem;
 }
 
-/* Estilos da página indicacao.html */
 h3
 {
     font-size: 1.10rem;
     margin-bottom: 2rem;
+}
+
+h4
+{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #833471;
 }
 
 .mapa
@@ -177,6 +182,16 @@ h3
 {
     color: #1014f7;
     font-size: 1.250rem;
+}
+
+main
+{
+    display: flex;
+}
+
+span
+{
+    align-items: center;
 }
 
 .contato
@@ -216,12 +231,15 @@ button
 {
     background-color: transparent;
     cursor: pointer; /* Transforma o cousor na mãozinha */
+    opacity: .9;
+    transition: 0.4s;
 }
 
 button:hover
 {
     background-color: #747d8c; /* Coloca um fundo no momento em que o mousse passa por cima do botão */
     color: #fff; /* A palavra Enviar fica na cor branca */
+    opacity: 1;
 }
 
 .gif
@@ -231,7 +249,80 @@ button:hover
     display: block;
     margin: 0 auto;
     padding: 1rem;
-  } 
+}
 
+.nome
+{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
 
-/* Estilos da página x.html */
+.flex-container p
+{
+    text-align: justify;
+}
+
+.flex-container
+{
+    display: flex;
+    flex-direction: column; /* indico que a direção que será adquirida será em coluna */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+}
+
+#fade, #modal
+{
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); /* Coloca opacidade apenas no background e não nos elementos que estão dentro dele */
+    z-index: 5;
+}
+
+#modal
+{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c8d6e5;
+    z-index: 10;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.model-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+#modal.hide, #fade.hide
+{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide
+{
+    top: 0;
+}
